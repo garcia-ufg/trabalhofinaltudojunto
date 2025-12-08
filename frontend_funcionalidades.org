@@ -1,0 +1,20 @@
+* Mas afinal, o que o front end vai fazer?
++ Receber dados do usuário e enviar pro back end cadastrar
++ Exibir uma prévia de um currículo
++ Gerar o PDF de um currículo com os dados fornecidos
++ Consultar um currículo já existente (por meio do ID de usuário)
++ Permitir editar um currículo
++ permitir deletar um curriculo
+* Das funcionalidades do frontend:
+** Receber dados do usuário e enviar pro back end cadastrar
+Um formulário com caixas de texto onde o usuário preenche todos os dados fornecidos. Confirmar o formulário verifica se já existe usuário cadastrado com o CPF dado no back end. Se o usuário já existir, uma mensagem de erro informa o usuário que o currículo já existe. Se não, o curriculo com os dados fornecidos é salvo no banco de dados.
+** Exibir uma prévia de um currículo
+Depois de criado um currículo, ou caso consulte ele pelo ID de usuário, o site mostra uma prévia da aparência do currículo com os dados providos pelo usuário preenchendo os campos relevantes
+** Gerar o PDF de um currículo com os dados fornecidos
+Na tela de preview do currículo, tem um butão pra gerar o pdf. Clicando nele gera o pdf
+** Consultar um currículo já existente
+Um botão na tela de cadastrar o usuário "Consultar currículo existente" leva o usuário pra uma tela com um campo onde ele pode entrar um ID de usuário para ver o currículo associado ao ID, caso exista. 
+** Permitir editar um currículo
+Na tela de preview do currículo, há um campo onde o usuário pode por o CPF e a senha. Se acertar, ele é levado pra uma tela de edição, um formulário onde os campos já estão com os dados preenchidos. Não é possível editar a Senha e o CPF, embora seja possível editar todos os outros campos. Todos os campos devem estar preenchidos.
+** Permitir deletar um currículo
+Na tela de edição de currículo, tem um botão vermelho onde o usuário pode clicar. Se ele clicar e confirmar o currículo é deletado do banco de dados.
