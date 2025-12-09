@@ -15,8 +15,8 @@ public class CurriculoBackApplication {
     public static void main(String[] args) {
 
 
-	boolean sucesso1 = setDados("../Dados/Jsons/");
-	boolean sucesso2 = setFotos("../Dados/Fotos/");
+	boolean sucesso1 = setDados("./Dados/Jsons/");
+	boolean sucesso2 = setFotos("./Dados/Fotos/");
 
 	if(sucesso1) System.out.println("Diretório de dados encontrado");
 	if(sucesso2) System.out.println("Diretório de fotos encontrado");
